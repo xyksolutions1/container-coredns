@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: © 2025 Nfrastack <code@nfrastack.com>
+# SPDX-FileCopyrightText: © 2026 Nfrastack <code@nfrastack.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ COPY README.md /usr/src/container/README.md
 
 ARG \
     COREDNS_REPO_URL="https://github.com/coredns/coredns" \
-    COREDNS_VERSION="v1.14.2"
+    COREDNS_VERSION="v1.14.3"
 
 ENV \
     CONTAINER_ENABLE_MESSAGING=FALSE \
