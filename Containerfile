@@ -5,16 +5,16 @@
 ARG \
     BASE_IMAGE
 
-FROM ${BASE_IMAGE}
+FROM docker.io/xyksolutions1/container-base:latest
 
 LABEL \
         org.opencontainers.image.title="CoreDNS" \
         org.opencontainers.image.description="DNS Server" \
-        org.opencontainers.image.url="https://hub.docker.com/r/nfrastack/coredns" \
-        org.opencontainers.image.documentation="https://github.com/nfrastack/container-coredns/blob/main/README.md" \
-        org.opencontainers.image.source="https://github.com/nfrastack/container-coredns.git" \
-        org.opencontainers.image.authors="Nfrastack <code@nfrastack.com>" \
-        org.opencontainers.image.vendor="Nfrastack <https://www.nfrastack.com>" \
+        org.opencontainers.image.url="https://hub.docker.com/r/xyksolutions1/coredns" \
+        org.opencontainers.image.documentation="https://github.com/xyksolutions1/container-coredns/blob/main/README.md" \
+        org.opencontainers.image.source="https://github.com/xyksolutions1/container-coredns.git" \
+        org.opencontainers.image.authors="xyksolutions1" \
+        org.opencontainers.image.vendor="xyksolutions1" \
         org.opencontainers.image.licenses="MIT"
 
 COPY CHANGELOG.md /usr/src/container/CHANGELOG.md
@@ -27,8 +27,8 @@ ARG \
 
 ENV \
     CONTAINER_ENABLE_MESSAGING=FALSE \
-    IMAGE_NAME="nfrastack/coredns" \
-    IMAGE_REPO_URL="https://github.com/nfrastack/container-coredns/"
+    IMAGE_NAME="xyksolutions1/coredns" \
+    IMAGE_REPO_URL="https://github.com/xyksolutions1/container-coredns/"
 
 RUN echo "" && \
     COREDNS_BUILD_DEPS_ALPINE=" \
